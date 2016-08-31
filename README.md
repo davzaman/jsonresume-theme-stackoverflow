@@ -87,3 +87,10 @@ Fork the project, add your feature (or fix your bug) and open a pull request OR
 ## License
 
 Available under the [MIT license](http://opensource.org/licenses/mit-license.php).
+
+######Personal: 
+Helpful command
+
+```
+hackmyresume BUILD Davina\ Z\ Resume.json TO out/resume.pdf -t ~/Documents/CSstuff/Projects/opensource/jsonresume-theme-stackoverflow
+```
