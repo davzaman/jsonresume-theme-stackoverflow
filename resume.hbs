@@ -107,9 +107,9 @@
 								</span>
 								<div class="header-left">
 									{{#if studyType}}
-										<div class="studyType">
-											{{studyType}}
-										</div>
+										<span class="studyType">
+											{{studyType}} -
+										</span>
 									{{/if}}
 									{{#if area}}
 										<div class="area">
@@ -123,7 +123,12 @@
 									{{/if}}
 								</div>
 								<div class="date">
-									{{#if start}}
+									{{#if expectedGraduation}}
+									<span class="endDate">
+										<b>Expected Graduation:</b> {{expectedGraduation}}
+									</span>
+									{{/if}}
+<!-- 									{{#if start}}
 									<span class="startDate">
 										{{Y start}}
 									</span>
@@ -136,7 +141,7 @@
 									<span class="endDate">
 										- Current
 									</span>
-									{{/if}}
+									{{/if}} -->
 								</div>
 							</header>
 
@@ -243,7 +248,7 @@
 									</div>
 									{{/if}}
 									<div class="company">
-										<b><u>{{company}}</u></b>
+										<b>{{company}}</b>
 									</div>
 									<div class="date">
 										{{#if start}}
@@ -262,10 +267,13 @@
 										</span>
 										{{/if}}
 									</div>
+ 									{{#if location}}
+									<span class="location"> at {{location.city}}, {{location.region}}</span>
+									{{/if}} 
 								</header>
 							{{/if}}
 
-                             {{#location}}
+<!--                              {{#location}}
                                 <span class="location">
                                     <span class="fa fa-map-marker"></span>
                                     {{#if city}}
@@ -284,7 +292,7 @@
                                     </span>
                                     {{/if}}
                                 </span>
-                            {{/location}}
+                            {{/location}} -->
                             {{#if website}}
                                 <span class="website">
                                     <a href="{{website}}">{{website}}</a>
@@ -424,13 +432,13 @@
 				</section>
 			{{/if}}
 
-		<!-- {{#if resume.awards.length}}
+			{{#if resume.projects.length}}
 				<section class="section">
 					<header>
-						<h2 class='section-title'>Activities and Awards</h2>
+						<h2 class='section-title'>Projects</h2>
 					</header>
-					<section id="awards">
-					{{#each resume.awards}}
+					<section id="projects">
+					{{#each resume.projects}}
 						<header class="clear">
 							<span class="space-left">
 								{{#if @first}}
@@ -444,14 +452,9 @@
 										{{title}}
 									</div>
 								{{/if}}
-								{{#if awarder}}
-									<div class="awarder">
-										{{awarder}}
-									</div>
-								{{/if}}
-							{{#if date}}
+							{{#if year}}
 								<div class="date">
-									{{Y date}}
+									{{Y year}}
 								</div>
 							{{/if}}
 						</header>
@@ -460,16 +463,16 @@
 						{{else}}
 							<div class="item display none" style="opacity:0">
 						{{/if}}
-							{{#if summary}}
-								<div class="summary">
-									<p>{{paragraphSplit summary}}</p>
+							{{#if description}}
+								<div class="description">
+									<p>{{description}}</p>
 								</div>
 							{{/if}}
 						</div>
 					{{/each}}
 					</section>
 				</section>
-			{{/if}}	 -->
+			{{/if}}	 
 
 			{{#if resume.awards.length}}
 			<section class="section">

@@ -147,10 +147,16 @@ section .location {
     -webkit-flex-flow: row;
     flex-flow: row;
     /*-webkit-justify-content: flex-end;*/
+
+}
+
+#header > #contact,
+#header > #profiles {
+    text-align: center;
 }
 
 #header > #header-and-location {
-    margin-right: 17em;
+    margin-right: 23em;
 }
 
 #skills,
@@ -277,6 +283,10 @@ h2.section-title {
     font-weight: 600;
 }
 
+h1.name {
+    color: #ff6d1f;
+}
+
 .company::before,
 .institution::before,
 .organization::before,
@@ -293,6 +303,13 @@ h2.section-title {
 }
 
 .section header .date {
+    font-size: 1rem;
+    display: inline-table;
+    padding: .1em 0;
+    font-weight: 600;
+}
+
+.section header .location {
     font-size: 1rem;
     display: inline-table;
     padding: .1em 0;
@@ -348,7 +365,7 @@ ul.badges {
 ul.badges .badge {
     display: inline-block;
     margin: 2px 2px 2px 0;
-    padding: 6px 7px 7px;
+    padding: 5px 6px 6px;
     font-size: .9rem;
     color: #FFF;
     line-height: 1;
@@ -451,12 +468,13 @@ ul.badges .badge:hover {
     border-bottom: none;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Mess with this to fix sizing of the page if ou add more*/
 #skills .item {
-    width: 16em;
+    width: 17.7em;
 }
 
 #skills .item .keywords {
-    width: 15em;
+    width: 16.7em;
 }
 
 /* Skill chart */
