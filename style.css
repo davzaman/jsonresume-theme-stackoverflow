@@ -54,7 +54,7 @@ table {
 ****************/
 body, html {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     color: #40484f;
     font-weight: 400;
     letter-spacing: 0;
@@ -65,7 +65,7 @@ body, html {
 
 p {
     display: block;
-    margin-bottom: 1.3em;
+    margin-bottom: .2em;
 }
 
 a {
@@ -114,13 +114,13 @@ strong {
 
 /* main container */
 #resume {
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: .5rem;
+    margin-top: .5rem;
 }
 
 /* every section wrapper */
 .section {
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
 }
 
 section .location {
@@ -129,16 +129,44 @@ section .location {
     font-weight: 700;
 }
 
-#contact {
-    margin-top: .5rem;
-}
-
 #profiles .item {
     padding: 0;
 }
 
-#header > #profiles,
-#header > #contact,
+/*#header {
+    display: flex;
+}
+
+#header > #contact {
+    display: flex;
+}
+
+#header > #profiles {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    -webkit-justify-content: flex-end;
+}*/
+
+#header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+    /*-webkit-justify-content: flex-end;*/
+}
+
+#header > #header-and-location {
+    margin-right: 15em;
+}
+
 #skills,
 #languages,
 #interests {
