@@ -243,7 +243,7 @@
 									</div>
 									{{/if}}
 									<div class="company">
-										{{company}}
+										<b><u>{{company}}</u></b>
 									</div>
 									<div class="date">
 										{{#if start}}
@@ -255,7 +255,8 @@
 										<span class="endDate">
 											- {{end}}
 										</span>
-										{{else}}
+										{{/if}}
+										{{#if current}}
 										<span class="endDate">
 											- Current
 										</span>
@@ -423,10 +424,10 @@
 				</section>
 			{{/if}}
 
-		{{#if resume.awards.length}}
+		<!-- {{#if resume.awards.length}}
 				<section class="section">
 					<header>
-						<h2 class='section-title'>Awards</h2>
+						<h2 class='section-title'>Activities and Awards</h2>
 					</header>
 					<section id="awards">
 					{{#each resume.awards}}
@@ -438,7 +439,6 @@
 									<span class="fa fa-caret-right"></span>
 								{{/if}}
 							</span>
-							<div class="header-left">
 								{{#if title}}
 									<div class="title">
 										{{title}}
@@ -449,7 +449,6 @@
 										{{awarder}}
 									</div>
 								{{/if}}
-							</div>
 							{{#if date}}
 								<div class="date">
 									{{Y date}}
@@ -470,7 +469,25 @@
 					{{/each}}
 					</section>
 				</section>
-			{{/if}}	
+			{{/if}}	 -->
+
+			{{#if resume.awards.length}}
+			<section class="section">
+				<header>
+					<h2 class='section-title'>Activities and Awards <span class="item-count">({{resume.awards.length}})</span></h2>
+				</header>
+				<section id="awards">
+					<ul class="badges">
+						{{#each resume.awards}}
+						<li>
+							<span class="badge"><div class="gold-circle"></div>{{title}}</span>
+							<span>{{summary}}</span>
+						</li>
+						{{/each}}
+					</ul>
+				</section>
+			</section>
+			{{/if}}
 
 			{{#if resume.publications.length}}
 				<section class="section">

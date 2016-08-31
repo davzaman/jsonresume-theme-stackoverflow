@@ -1,6 +1,6 @@
 /********************************************
-*   reset from
-*   http://meyerweb.com/eric/tools/css/reset/
+* 	reset from
+* 	http://meyerweb.com/eric/tools/css/reset/
 *******************************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,7 +50,7 @@ table {
 }
 
 /****************
-*   COMMONS
+*	COMMONS
 ****************/
 body, html {
     font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -133,9 +133,8 @@ section .location {
     display: inline;
 }
 
-#awards .title { 
-    font-size: .8em;
-    display: inline;
+#awards .header-left { 
+    font-size: .85em;
 }
 
 #header {
@@ -322,48 +321,6 @@ ul.courses li:hover {
     background: #dfeaf0;
 }
 
-ul.badges {
-    margin-top: .5em;
-}
-
-.gold-circle {
-    display: inline-block;
-    background-size: initial;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    margin-right: 5px;
-    margin-left: 2px;
-    width: 6px;
-    height: 6px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #ffcc01;
-}
-
-/*ul.badges li {
-    display: inline;
-}*/
-
-ul.badges .badge {
-    display: inline-block;
-    margin: 2px 2px 2px 0;
-    padding: 6px 7px 7px;
-    font-size: .9rem;
-    color: #FFF;
-    line-height: 1;
-    text-decoration: none;
-    white-space: nowrap;
-    background-color: #2f3337;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-
-ul.badges .badge:hover {
-    background: #dfeaf0;
-}
-
-
 .item {
     padding: .5em 0;
 }
@@ -509,7 +466,7 @@ ul.badges .badge:hover {
 }
 
 /******************
-*   HELPER CLASSES
+*	HELPER CLASSES
 ******************/
 
 .clear::after {
@@ -528,7 +485,7 @@ ul.badges .badge:hover {
 }
 
 /****************
-*       TABLET
+*		TABLET
 ****************/
 @media screen and (min-width: 602px) {
     #resume {
@@ -538,7 +495,7 @@ ul.badges .badge:hover {
 }
 
 /****************
-*       LAPTOP
+*		LAPTOP
 ****************/
 @media screen and (min-width: 1025px) {
     li {
